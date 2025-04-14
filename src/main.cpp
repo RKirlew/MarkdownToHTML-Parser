@@ -34,9 +34,10 @@ int main() {
 	    for (const auto& tags : html) {
 	        std::cout << tags << "\n";
 	    }
-	}else{
+	}
+    	else{
 		std::cerr << "File could not be opened!\n"; // Report error
-     	std::cerr << "Error code: " << std::strerror(errno); // Get some info as to why
+     		std::cerr << "Error code: " << std::strerror(errno); // Get some info as to why
 	}
    
     return 0;
